@@ -97,7 +97,7 @@ html, html[data-theme="light"] {
 
 // Supernova Theme
 html[data-theme="dark"] {
-  --base00: #373e47; // Default Background
+  --base00: hsl(0, 0%, 20%); // Default Background
   --base01: #444c56; // Lighter Background (Used for status bars, line number and folding marks)
   --base02: #545d68; // Selection Background
   --base03: #909dab; // Comments, Invisible, Line Highlighting
