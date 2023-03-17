@@ -1,7 +1,7 @@
 #★ SITE CONFIGURATION
 
 #- Using a Custom Domain
-url              : "https://${SubDomain}.newspectrum.dev"
+url              : "https://hub.newspectrum.dev"
 baseurl          : "/"
 
 #- Using GitHub.io
