@@ -51,7 +51,7 @@ html, html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --background: #22272e; // brand, background
+  --background: #0c1119; // brand, background
   --blockquote: #373e47; // blockquote
   --selection: #545d68; // selection
   --meta: #909dab; // meta
@@ -97,9 +97,9 @@ html, html[data-theme="light"] {
 
 // Supernova Theme
 html[data-theme="dark"] {
-  --base00: hsl(0, 0%, 20%); // Default Background
-  --base01: #444c56; // Lighter Background (Used for status bars, line number and folding marks)
-  --base02: #545d68; // Selection Background
+  --base00: #060d19; // Default Background
+  --base01: #192433; // Lighter Background (Used for status bars, line number and folding marks)
+  --base02: #26313f; // Selection Background
   --base03: #909dab; // Comments, Invisible, Line Highlighting
   --base04: #adbac7; // Dark Foreground (Used for status bars)
   --base05: #cdd9e5; // Default Foreground, Caret, Delimiters, Operators
