@@ -46,7 +46,7 @@ comments:
   # For more info, go to https://utteranc.es
     repo:            # your public comments repository (e.g. owner/repo)
     issue-term:      # Issue term
-	# (e.g. "comment" consider issues with this word in the title as comments)
+# (e.g. "comment" consider issues with this word in the title as comments)
 
 # PAGINATION
 paginate: 5
