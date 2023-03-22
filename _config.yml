@@ -64,5 +64,21 @@ sass:
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
 exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*", "README.md"]
 
+
+# Tawk.to Chat Integration
+#
+#  More › https://www.tawk.to/knowledgebase/
+#
+#  tawk.to is a free live chat app that lets you monitor and chat
+#  with visitors on your website or from a free customizable page
+#
+#  To load the script add 'tawkto: true' in front matter of each page
+#
+#  used in _includes/footer_scripts
+
+tawkto_embed_uri: https://embed.tawk.to/6413310731ebfa0fe7f30041/1grlff1l5
+
+
+
 # theme: type-on-strap      # if using the theme as a jekyll theme gem
 remote_theme: sylhare/Type-on-Strap   # For GitHub Pages
