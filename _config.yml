@@ -12,15 +12,17 @@ baseurl          : "/"
 
 # THEME-SPECIFIC CONFIGURATION
 title: "New Spectrum.dev"
-description: ""
+description: >
+  New Spectrum.dev
 avatar: assets/img/nsdev-icon_circle.svg
 favicon: assets/favicon.ico
 
 # Header and footer text
-header_text: ""
+header_text:
 header_feature_image: assets/img/header/triangular.jpeg
 header_feature_image_responsive: true
-footer_text: >
+footer_text: |
+  Test string.
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
 # Blog
@@ -37,16 +39,30 @@ google_analytics:            # Tracking ID, e.g. "UA-000000-01"
 cookie_consent: false        # To respect the usage of cookies
 color_theme: auto
 
+# Tawk.to Chat Integration
+#
+#   More › https://www.tawk.to/knowledgebase/
+#
+#   Tawk.to is a free live chat app that lets you monitor and chat
+#   with visitors on your website or from a free customizable page
+#
+#   To load the script add 'tawkto: true' in front matter of each page
+#     (used in _includes/footer_scripts)
+
+tawkto_embed_uri: https://embed.tawk.to/6413310731ebfa0fe7f30041/1grlff1l5
+
+
 # Comments
 comments:
   disqus_shortname:         # Your discus shortname for comments
   cusdis_app_id:            # Your cusdis data-app-id
-  utterances:  
-  # Enable by filling below information.
-  # For more info, go to https://utteranc.es
-    repo:            # your public comments repository (e.g. owner/repo)
-    issue-term:      # Issue term
-# (e.g. "comment" consider issues with this word in the title as comments)
+  utterances:               # Enable by filling below information.
+                            #   For more info, go to https://utteranc.es
+    repo:                   # Your public comments repository
+                            #   (e.g. owner/repo)
+    issue-term:             # Issue term
+                            #   (e.g. "comment" consider issues with
+                            #    this word in the title as comments)
 
 # PAGINATION
 paginate: 5
@@ -63,21 +79,6 @@ sass:
   style: compressed
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
 exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*", "README.md"]
-
-
-# Tawk.to Chat Integration
-#
-#  More › https://www.tawk.to/knowledgebase/
-#
-#  tawk.to is a free live chat app that lets you monitor and chat
-#  with visitors on your website or from a free customizable page
-#
-#  To load the script add 'tawkto: true' in front matter of each page
-#
-#  used in _includes/footer_scripts
-
-tawkto_embed_uri: https://embed.tawk.to/6413310731ebfa0fe7f30041/1grlff1l5
-
 
 
 # theme: type-on-strap      # if using the theme as a jekyll theme gem
