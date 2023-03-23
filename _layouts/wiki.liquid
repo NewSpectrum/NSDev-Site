@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<section id="wiki_page" class="wiki">
+	<header>
+	{% if page.wiki_section and page.wiki_title %}
+		<h3 id="section_title">
+			{{ page.wiki_section }}
+		</h3><br />
+		<h1 id="wiki_title" class="page_title">
+			{{ page.wiki_title }}
+		</h1>
+	{% elif page.wiki_title %}
+		<h1 id="wiki_title" class="page_title">
+			{{ page.wiki_title }}
+		</h1>
+	{% endif %}
+	</header>
+	
+	{% include toc content="{{ page.toc }}" %}	
+
+	{{ content }}
+	
+	{% include related %}
+	{% include sources %}
+</section>

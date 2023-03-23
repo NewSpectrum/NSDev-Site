@@ -1,0 +1,37 @@
+<section id="toc_section" class="toc">
+	<details id="toc_dropdown" class="dropdown">
+		<summary id="toc_summary">
+			<h2 id="toc_header" class="toc_title">
+				Table of Contents
+			</h2>
+		</summary>
+		
+		<div id="toc_contents" class="contents">
+			<!-- Frontmatter Data -->
+		</div>
+	</details>
+</section>
+
+{% comment %}
+Fromtmatter Options
+
+---
+toc:
+  - Name:
+    - Display    : 'Name'
+    - Link       : '#name'
+	- Type       : 'item'
+	- Parent     :
+  - item_name:
+    - Display    : 'display_text'  # The text to display for the hyperlink
+    - Link       : '#header_id'    # The link destination (within a page)
+	- Type       : 'item'          # header, subheader, item
+	- Parent     :                 # TOC 'item_name'
+  - item_name:
+    - Display    : 'display_text'  # The text to display for the hyperlink
+    - Link       : '#header_id'    # The link destination (within a page)
+	- Type       : 'item'          # header, subheader, item
+	- Parent     :                 # TOC 'item_name'
+---
+
+{% endcomment %}
