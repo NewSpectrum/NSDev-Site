@@ -39,7 +39,9 @@ google_analytics:            # Tracking ID, e.g. "UA-000000-01"
 cookie_consent: false        # To respect the usage of cookies
 color_theme: auto
 
-# Tawk.to Chat Integration
+
+
+# tawk.to Chat Integration
 #
 #   More › https://www.tawk.to/knowledgebase/
 #
@@ -79,13 +81,13 @@ sass:
   style: compressed
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
 exclude: [
-	".jekyll-cache",
-	".jekyll-metadata",
-	".idea",
-	"vendor/*",
-	"assets/node_modules/*",
-	"README.md",
-	"**/.old/*"
+  ".jekyll-cache",
+  ".jekyll-metadata",
+  ".idea",
+  "vendor/*",
+  "assets/node_modules/*",
+  "README.md",
+  "**/.old/*"
 ]
 
 

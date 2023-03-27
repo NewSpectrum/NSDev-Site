@@ -24,7 +24,11 @@ layout: default
     <div id="main" class="call-out call-out_img">
         <h1> {{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>"}} </h1>
     </div>
+    
+    {{ content }}
 
-    {% include blog/blog.liquid %}
+    {% if site.homepage:blog_feed == true %}
+        {% include blog/blog.liquid %}
+    {% endif %}
 
 </div>
