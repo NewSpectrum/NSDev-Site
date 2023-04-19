@@ -108,19 +108,42 @@ DISKPART> list disk
 
 The [`CLEAN`](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/clean) tool performs a similar function to [`FORMAT`](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc753770(v=ws.11)) except it targets the entire disk instead of a single partition.
 
-The default partitioning scheme used when cleaning a disk is [MBR]. This is not compatible with UEFI.
+The default partitioning scheme used when cleaning a disk with `CLEAN` is [MBR](https://en.wikipedia.org/wiki/Master_boot_record), which stands for *[Master Boot Record](https://en.wikipedia.org/wiki/Master_boot_record)*. This is not compatible with [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface). To be compatible with __UEFI, the drive must be converted to use [GPT](https://en.wikipedia.org/wiki/GUID_Partition_Table), which stands for *[GUID Partition Table](https://en.wikipedia.org/wiki/GUID_Partition_Table)*.
 
 ##### Input
 ```bat
 clean
 
 convert gpt
+
+list disk
 ```
 
 ##### Output Example
 ```
+DISKPART> sel disk 4
 
+Disk 4 is now the selected disk.
+
+DISKPART> clean
+
+DiskPart succeeded in cleaning the disk.
+
+DISKPART> convert gpt
+
+DiskPart successfully converted the selected disk to GPT format.
+
+DISKPART> list disk
+
+  Disk ###  Status         Size     Free     Dyn  Gpt
+  --------  -------------  -------  -------  ---  ---
+  Disk 0    Online         2794 GB  1024 KB        *
+  Disk 1    Online            9 TB      0 B        *
+  Disk 2    Online          465 GB  1024 KB        *
+* Disk 4    Online          232 GB   232 GB        *
 ```
+
+Verify the disk has been converted to use __GPT__ with `list disk`. If the disk is using the __GPT Format__ it will have an Asterisk `*` under the `Gpt` column.
 
 
 <br /><br /><br />
