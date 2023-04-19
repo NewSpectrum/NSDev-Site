@@ -1,3 +1,27 @@
 /*★ Wiki Styles
 
 */
+@import "/assets/fonts/font-sheet.css";
+
+
+.wiki {
+	.wiki_header {
+		background-origin: border-box;
+		background-size: cover;
+		@media (min-width: 768px) {
+			padding: 0 0 0 0;
+			header {
+				h1 h2 h3 h4 h5 h6 {
+					font-family: 'Red Hat Display', sans-serif;
+				}
+			code {
+				font-family: 'Fira Code', monospace;
+			}
+			}
+		}
+
+		@media (max-width: 767px) {
+			padding: 0 0 0 0;
+		}
+	}
+}

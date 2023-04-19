@@ -1,6 +1,8 @@
 {
+	"required": [
+		"sissel.shopify-liquid"
+	],
 	"recommendations": [
-		"sissel.shopify-liquid",
 		"formulahendry.auto-close-tag"
 	]
 }
