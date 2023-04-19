@@ -23,7 +23,7 @@
 	</h3>
 	</summary>
 
-<pre lang="bash">
+<pre>
 FIND(1)    General Commands Manual
 
 NAME
